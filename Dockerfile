@@ -1,4 +1,4 @@
-# Docker File in master branch geaendert
+# Docker File in master und feature branch geaendert
 
 ARG DOCKER_BASE
 FROM $DOCKER_BASE
@@ -16,4 +16,3 @@ RUN python3 -m pip install psutil
 COPY . /gfootball
 RUN cd /gfootball && python3 -m pip install .
 WORKDIR '/gfootball'
-Fix docker aus feature-Docker branch
